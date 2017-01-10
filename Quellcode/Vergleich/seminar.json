@@ -1,0 +1,35 @@
+{  
+   "Titel":"Proseminar - Browser Games mit HTML5 (IN0013)",
+   "Nummer":"0000001591",
+   "Art":"Proseminar",
+   "Semesterwochenstunden":2,
+   "Angeboten":"Wintersemester 2016/17",
+   "Vortragende":{  
+      "Titel":"Prof. Dr.",
+      "Name":"Brüggemann-Klein",
+      "Vorname":"Anne",
+      "EMail":"brueggemann-klein@tum.de",
+      "Homepage":"http://www11.in.tum.de/lehrstuhl/personen/brueggemann",
+      "Telefon":"+49 (89) 289 - 18659",
+      "Sprechstunde":null,
+      "Postadresse":{  
+         "Name":"TUINF02 Informatik 11 - Professur für Programmierung und Anwendung verteilter Systeme",
+         "Strasse":"Boltzmannstr. 3/I",
+         "PLZ":"85748",
+         "Ort":"Garching b. München"
+      }
+   },
+   "Termine":[  
+      "23.06.2016",
+      "14.11.2016",
+      "28.11.2016",
+      "05.12.2016",
+      "12.12.2016",
+      "19.12.2016",
+      "09.01.2017",
+      "16.01.2017",
+      "23.01.2017",
+      "30.01.2017",
+      "06.02.2017"
+   ]
+}

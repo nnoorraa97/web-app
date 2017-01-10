@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Serialisierung von Objekten</title>
+
+        <script><!--
+            function Veranstaltung(titel, nummer, art, sws, angebot) {
+                this.titel = titel;
+                this.nummer = nummer;
+                this.art = art;
+                this.sws = sws;
+                this.angebot = angebot;
+            }
+
+            function init() {
+                document.getElementById("output").style.display = "none";
+            }
+
+            function serializeData() {
+                var titel = document.getElementById("titel").value;
+                var nummer = document.getElementById("nummer").value;
+                var art = document.getElementById("art").value;
+                var sws = document.getElementById("sws").value;
+                var angebot = document.getElementById("angebot").value;
+
+                var veranstaltung = new Veranstaltung(titel, nummer, art, sws, angebot);
+                
+                var json = JSON.stringify(veranstaltung);
+
+                document.getElementById("jsondata").innerHTML = json;
+                document.getElementById("output").style.display = "block";
+            }
+        --></script> 
+    </head>
+
+    <body onload="init()">
+        <div>
+            <h1>Serialisieren von Daten / Objekten</h1>
+            <table>
+                <tr>
+                    <td>Titel</td>
+                    <td><input type="text" id="titel" /></td>
+                <tr>
+                <tr>
+                    <td>Nummer</td>
+                    <td><input type="text" id="nummer" /></td>
+                <tr>
+                <tr>
+                    <td>Art</td>
+                    <td><input type="text" id="art" /></td>
+                <tr>
+                <tr>
+                    <td>Semesterwochenstunden</td>
+                    <td><input type="text" id="sws" /></td>
+                <tr>
+                <tr>
+                    <td>Angebot im Semester</td>
+                    <td><input type="text" id="angebot" /></td>
+                <tr>
+            </table>
+
+            <button onclick="serializeData()">Serialisieren</button>
+        </div>
+        <div id="output">
+            <h1>JSON</h1>
+            <div id="jsondata" />
+        </div>
+    </body>
+</html>
